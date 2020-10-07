@@ -1,11 +1,11 @@
 -var titulos =['Titulo principal', 'Subtitulo 1',  'Subtitulo 2', 'Subtitulo 3']
 
-mixin caja(imagen, titulo, contenido)
-    .caja
-        .caja__imagen: img(src="images/"+imagen, alt="")
-        .caja__contenido
-            h2 #{titulos[titulo]}
-            p= contenido
+//- mixin caja(imagen, titulo, contenido)
+//-     .caja
+//-         .caja__imagen: img(src="images/"+imagen, alt="")
+//-         .caja__contenido
+//-             h2 #{titulos[titulo]}
+//-             p= contenido
 
 <!DOCTYPE html>
 html(lang="en")
@@ -28,6 +28,28 @@ html(lang="en")
                 a.boton leer mas
         
         main.contenido
+            .caja
+                .caja__imagen: img(src="images/imagen.png", alt="")
+                .caja__contenido
+                    h2 #{titulos[1]}
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, debitis quae repellat doloribus ad molestiae numquam a optio harum magni?
+            .caja
+                .caja__imagen: img(src="images/imagen.png", alt="")
+                .caja__contenido
+                    h2 #{titulos[1]}
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, debitis quae repellat doloribus ad molestiae numquam a optio harum magni?
             
+            .caja
+                .caja__imagen: img(src="images/imagen.png", alt="")
+                .caja__contenido
+                    h2 #{titulos[1]}
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, debitis quae repellat doloribus ad molestiae numquam a optio harum magni?
+        
+        footer
+            h2 platziGames
+            ul
+                li Acerca 
+                li Noticias
+                li Contacto
 
 
