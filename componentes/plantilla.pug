@@ -1,0 +1,17 @@
+-var titulos =['Titulo principal', 'Subtitulo 1',  'Subtitulo 2', 'Subtitulo 3']
+
+mixin caja(imagen, titulo, contenido)
+    .caja
+        .caja__imagen: img(src="images/"+imagen, alt="")
+        .caja__contenido
+            h2 #{titulos[titulo]}
+            p= contenido
+
+<!DOCTYPE html>
+html(lang="en")
+    include head.pug
+    body
+        header
+            h1 Platzi Games
+            a.boton log in
+        block continuar
